@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container{
+        background-color: blue;
+        height:100vh;
+    }
+    .box1{
+        width: 200px;
+        height:150px;
+        background:red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+
+        animation-name: widthanimation;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes widthanimation {
+        from{
+            width:200px;
+        }
+        to{
+            width:600px;
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            hello there
+        </div>
+    </div>
+</body>
+</html>
